@@ -29,3 +29,20 @@ Code was revised to ask for user input, confirm validity of user guess (allowing
 - `ask_for_input` function checks input is valid (using `.isalpha()` method), and uses a `while` loop to ask user for a valid input if input is not valid.
 
 - `check_guess` function created to assess whether user guess is in the selected word (printing different messages accordingly).  This function is called by the `ask_for_input` function.
+
+
+&nbsp;
+# Milestone 4
+
+A class was defined which contains attributes and methods necessary for the game.  The class requires one argument, `word_list`: the list of words from which a word will be selected. There is also an optional argument, `num_lives` for the number of lives the player has at the start of the game (this defaults to 5 if unspecified).
+
+Starting attributes include a list of blank characters representing each of the letters of the randomly selected word, the number of lives of the player, and an (empty) list of the guesses made so far.
+
+The methods defined in milestone 3 were included as class methods, with some updates/ additions:
+- the `ask_for_input` function refers each guess to a list of previous guesses, and updates this list after each guess is made. Valid guesses are single letter alphabetical characters that haven't been guessed previously.
+
+for valid guesses, the `check_guess` function is called.
+- if the guess is in the word, the blank placeholders are replaced accordingly. 
+- if the guess is not in the word, the player loses one life.
+
+
