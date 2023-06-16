@@ -46,3 +46,23 @@ for valid guesses, the `check_guess` function is called.
 - if the guess is not in the word, the player loses one life.
 
 
+&nbsp;
+# Milestone 5
+
+The game is implemented as a function which takes the selected `word_list` as an argument.  
+
+The number of lives (`num_lives`) is (currently) hard-coded within this function as 5 for each new game.
+
+When the function is called, an instance of the Hangman class is instantiated and the game begins.
+
+The `ask_for_input` method is called and the player is asked to enter a single letter.
+
+Provided the input is valid (a single alphabetical character), the `check_guess` method is called:
+- If the letter is in the word, the player receives a message.  
+- If the letter is not in the word, the player loses one life.  
+
+Play continues in this way until either 
+- the player loses all their lives (**player loses**), or 
+- all the letters in the unknown word are guessed (**player wins**).
+
+This is implemented by a `while` loop which checks the number of remaining letters to be guessed, and the number of lives the player has remaining to determine.

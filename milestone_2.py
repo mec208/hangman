@@ -12,7 +12,7 @@ print(word_list)
 
 # Select a word at random from the list
 word = random.choice(word_list)
-print(word)
+
 
 
 # Ask for User Input

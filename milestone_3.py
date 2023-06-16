@@ -11,7 +11,7 @@ print(word_list)
 
 # Select a word at random from the list
 word = random.choice(word_list)
-print(word) # #RESOLVE -> this needs to be removed in the final version!
+
 
 
 # Check if guess is in the word
