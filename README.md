@@ -21,3 +21,11 @@ Initial code was written for the task, in Python.  This includes:
 - returning different messages to the user according to whether these checks are passed
 
 
+&nbsp;
+# Milestone 3
+
+Code was revised to ask for user input, confirm validity of user guess (allowing input to be re-entered if invalid), and subsequently check if user guess is in the randomly-selected word.  This was done by creation of two functions:
+
+- `ask_for_input` function checks input is valid (using `.isalpha()` method), and uses a `while` loop to ask user for a valid input if input is not valid.
+
+- `check_guess` function created to assess whether user guess is in the selected word (printing different messages accordingly).  This function is called by the `ask_for_input` function.
