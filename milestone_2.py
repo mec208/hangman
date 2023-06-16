@@ -17,7 +17,7 @@ word = random.choice(word_list)
 # Ask for User Input
 guess = input("Enter a single letter >").lower()
 
-if len(guess)==1 and guess.isalpha()
+if len(guess)==1 and guess.isalpha():
     print("Good guess!")
 else: 
     print("Oops! That is not a valid input")
